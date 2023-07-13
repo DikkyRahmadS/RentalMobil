@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cart"
+        android:orderInCategory="100"
+        android:title="Cart"
+        app:showAsAction="always"
+        android:icon="@drawable/actionbar_group_icon"
+        />
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:title="refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_refresh"
+        />
+    <item
+        android:id="@+id/ulasan"
+        android:orderInCategory="100"
+        android:title="Ulasan"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/bantuan"
+        android:orderInCategory="100"
+        android:title="Bantuan"
+        app:showAsAction="never"
+        />
+
+</menu>

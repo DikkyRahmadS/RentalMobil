@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#73D577"
+    tools:context=".Rating"
+   >
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/rating" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#FFF"
+        android:gravity="center"
+        >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:text="Bagaimana ulasan aplikasi kami? silahkan beri nilai"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/penilaian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.5"
+        />
+
+     <TextView
+         android:id="@+id/rate"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Rating:"
+         android:fontFamily="monospace"
+         android:textSize="20sp"
+         android:textStyle="bold"
+         />
+    </LinearLayout>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="#F5deb3"
+            android:text="Berikan Rating"
+            />
+</LinearLayout>
